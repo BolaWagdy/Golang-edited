@@ -1,8 +1,9 @@
 package arrays
-func Sum(nums []int)(sum int){
-	sum =0
-	for i:=0;i<len(nums);i++{
-		sum+= nums[i]
+
+func Sum(nums []int) (sum int) {
+	sum = 0
+	for _, num := range nums {
+		sum += num
 	}
 	return sum
 }
