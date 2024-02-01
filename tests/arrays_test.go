@@ -9,9 +9,9 @@ import (
 func TestSum(t *testing.T) {
 	t.Run("colletion of 5 items", func(t *testing.T) {
 		nums := [5]int{1, 2, 3, 4, 5}
-		got := arrays.Sum(nums[0:1]) //the [:] is creating a silce out of 
-											 //the original array and : is a kind of a
-											 //range operator that is not inclusive
+		got := arrays.Sum(nums[0:1]) //the [:] is creating a silce out of
+		//the original array and : is a kind of a
+		//range operator that is not inclusive
 		want := 1
 		if got != want {
 			t.Errorf("got %d want %d given %d", got, want, nums)
