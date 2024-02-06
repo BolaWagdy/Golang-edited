@@ -1,18 +1,15 @@
 package main
 
-import (
-	"fmt"
-	"log"
+import "fmt"
 
-	"github.com/Ozzy-ZY/proj/internal/helloworld"
-)
-
-func main() {
-	log.SetPrefix("greeting: ")
-	log.SetFlags(0)
-	message , err := helloworld.Hello("")
-	if err != nil{
-		log.Fatal(err)
+func sqrt(x float32) float32 {
+	var z float32 = 1.0
+	for i := 0; i < 10; i++ {
+		z -= (z*z - x) / (2 * z)
 	}
-	fmt.Println(message)
+	return z
+
+}
+func main() {
+	fmt.Println(sqrt(9))
 }
