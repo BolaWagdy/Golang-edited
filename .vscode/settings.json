@@ -1,0 +1,7 @@
+{
+    "workbench.activityBar.location": "top",
+    "workbench.iconTheme": "vs-seti",
+    "workbench.tree.enableStickyScroll": true,
+    "workbench.view.alwaysShowHeaderActions": false,
+    "workbench.editor.editorActionsLocation": "titleBar"
+}

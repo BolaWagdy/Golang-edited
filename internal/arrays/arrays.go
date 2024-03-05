@@ -7,3 +7,9 @@ func Sum(nums []int) (sum int) {
 	}
 	return sum
 }
+func SumAll(numtosum ...[]int) (sums []int) {
+	for _, nums := range numtosum {
+		sums = append(sums, Sum(nums))
+	}
+	return sums
+}

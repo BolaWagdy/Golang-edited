@@ -1,6 +1,7 @@
 package tests
 
 import (
+	"slices"
 	"testing"
 
 	"github.com/Ozzy-ZY/proj/internal/arrays"
@@ -25,4 +26,11 @@ func TestSum(t *testing.T) {
 			t.Errorf("got %d want %d given %d", got, want, nums)
 		}
 	})
+}
+func TestSumAll(t *testing.T) {
+	got := arrays.SumAll([]int{5, 5}, []int{1, 1, 1})
+	want := []int{10, 3}
+	if !slices.Equal(got, want) {
+		t.Errorf("got %v want %v", got, want)
+	}
 }

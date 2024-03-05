@@ -10,6 +10,9 @@ func sqrt(x float32) float32 {
 	return z
 
 }
+
 func main() {
 	fmt.Println(sqrt(9))
+	fmt.Println("hello world")
+
 }
